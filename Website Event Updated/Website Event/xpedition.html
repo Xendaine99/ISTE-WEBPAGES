@@ -1,0 +1,144 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="xppedition-styles.css" rel="stylesheet" />
+  <!-- <link href="{% static 'css/navbar.css' %}" rel="stylesheet" /> -->
+</head>
+
+<body>
+  <div class="form-body">
+    <div class="container">
+        <center>
+
+          <img class="img"
+            src="logo.png" alt="logo img" >
+            <!--{% comment %}--> <h1 class="form-title">Register Now!</h1> <!--{% endcomment %}-->
+            
+          </center>
+      <div class="title">Team Details</div>
+      <form action="pixel" method="post">
+        <!-- {% csrf_token %} -->
+        <div class="user__details">
+        <div class="input__box">
+            <span class="details">Team Name *</span>
+            <input type="text" maxlength="40" placeholder="Team's Name" required name="teamname" />
+        </div> 
+        <div class="input__box">
+          <span class="details">Team Password *</span>
+          <input type="text" maxlength="40" placeholder="Team's Password" required name="teampassword" />
+      </div> 
+          <div class="input__box">
+            <span class="details">Leader's Name *</span>
+            <input type="text" maxlength="20" placeholder="Name" required name="leadername" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Leader's Roll No* </span>
+            <input type="tel" pattern="[0-9]{9}" placeholder="Roll No" required name="leaderrollno" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Leader's Email *</span>
+            <input type="email" maxlength="50" placeholder="Email" required name="leaderemail" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Leader's Phone Number *</span>
+            <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10-digit Phone Number" required name="leaderpno" />
+          </div>
+
+        </div>
+
+        <!-- {% comment %} Teammate 1 {% endcomment %} -->
+        <div class="title">Teammate 1</div>
+        <div class="user__details">
+          <div class="input__box">
+            <span class="details">Teammate Name* </span>
+            <input type="text" maxlength="20" placeholder="Name" required  name="teammate1name" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Teammate Roll No* </span>
+            <input type="tel" pattern="[0-9]{9}" placeholder="Roll No" required name="teammate1rollno" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Teammate Email* </span>
+            <input type="email" maxlength="50" placeholder="Email" required name="teammate1email" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Teammate Phone Number* </span>
+            <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10-digit Phone Number"required  name="teammate1pno" />
+          </div>
+        </div> 
+
+        <!-- {% comment %} Teammate 2 {% endcomment %} -->
+        <div class="title">Teammate 2</div>
+        <div class="user__details">
+          <div class="input__box">
+            <span class="details">Teammate Name* </span>
+            <input type="text" maxlength="20" placeholder="Name" required name="teammate2name" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Teammate Roll No* </span>
+            <input type="tel" pattern="[0-9]{9}" placeholder="Roll No" required name="teammate2rollno" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Teammate Email* </span>
+            <input type="email" maxlength="50" placeholder="Email" required name="teammate2email" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Teammate Phone Number* </span>
+            <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10-digit Phone Number" required name="teammate2pno" />
+          </div>
+
+        </div> 
+
+        <div class="title">Teammate 3</div>
+        <div class="user__details">
+          <div class="input__box">
+            <span class="details">Teammate Name </span>
+            <input type="text" maxlength="20" placeholder="Name"  name="teammate1name" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Teammate Roll No </span>
+            <input type="tel" pattern="[0-9]{9}" placeholder="Roll No" name="teammate1rollno" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Teammate Email </span>
+            <input type="email" maxlength="50" placeholder="Email"  name="teammate1email" />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Teammate Phone Number </span>
+            <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10-digit Phone Number"  name="teammate1pno" />
+          </div>
+        </div> 
+
+        <div class="button">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
