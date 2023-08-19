@@ -15,7 +15,7 @@ const orientationRegistrationSchema = new mongoose.Schema({
         minlength: 10,
         maxlength: 10,
     },
-    branch: {
+    rollNo: {
         type: String,
         required: true,
     },

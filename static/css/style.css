@@ -1,22 +1,23 @@
 @font-face {
   font-family: headingsFont;
-  src: url(Pirate\ Scroll.otf);
+  src: url(Fonts/Pirate\ Scroll.otf);
 }
 
 @font-face {
   font-family: textFont;
-  src: url(OpenSans-VariableFont_wdth\,wght.ttf);
+  src: url(Fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 @font-face {
   font-family: buttonfont;
-  src: url(LEMONMILK-Bold.otf);
+  src: url(Fonts/LEMONMILK-Bold.otf);
 }
 
  *{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* .landingimg{
@@ -27,7 +28,7 @@
 #landing{
     background-color: black;
     height: 20.9cm;
-    background-image: url(Xpedition\ Logo\ background.png);
+    background-image: url(imgbg/xlg.png);
 }
 
 #landing ul{
