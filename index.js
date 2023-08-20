@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const orientationRegistrationData = require('./Controllers/orientationRegistrationData');
-
+app.use(express.json());
 
 app.use(express.static(__dirname + '/'));
 
