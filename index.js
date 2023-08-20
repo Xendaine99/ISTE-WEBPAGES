@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const orientationRegistrationData = require('./Controllers/orientationRegistrationData');
 
+
 app.use(express.static(__dirname + '/'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -18,6 +19,9 @@ app.get('/', (req, res) => {
 app.get('/eventRegister', (req, res) => {
     res.sendFile(__dirname + '/static/html/xpedition.html');
 });
+
+app.use('/eventRegisterSubmit', require('./Controllers/xpeditionRegistrationData'));
+
 
 app.post('/orientationSubmit', (req, res) => {
     orientationRegistrationData.orientationData_get(req, res);
