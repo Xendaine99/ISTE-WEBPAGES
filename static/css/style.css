@@ -27,7 +27,7 @@
 
 #landing{
     background-color: black;
-    height: 20.9cm;
+    height: 38cm;
     background-image: url(imgbg/xlg.png);
 }
 
@@ -47,7 +47,7 @@
 }
 
 .landing{
-  margin-top: -10em;
+  margin-top: 10em;
 }
 
 
@@ -70,13 +70,13 @@
 }
 
 .eventlogo{
-    margin-top: -0.5em;
-    margin-left: 12em;
+    margin-top: -22em;
+    /* margin-left: 10em; */
 }
 
 
 #registerbtn{
-  margin-top: -10.7em;
+  margin-top: -14.7em;
 }
 
 
@@ -110,11 +110,13 @@
 
 #timerLanding{
   text-align: center;
-  background: black;
+  /* background: black; */
   font-family: sans-serif;
   font-weight: 100;
   margin-top: 4em;
   padding-top: 1em;
+  margin-top: 1cm;
+  /* margin-left: 1cm; */
   /* background-image: url(Xpedition\ Logo\ background.png); */
   height: 8cm;
 }
@@ -253,24 +255,22 @@
   padding: 10px;
 } */
 
-#about{
-  height: 20cm;
-  background-color: black;
-  margin-top: -5em;
+.about{
+  margin-top: -20em;
+  background-color: #000;
 }
 
-.aboutContent{
+/* .aboutContent{
   background-image: url(img3.jpg);
-  /* opacity: 50%; */
   background-size: cover;
   height: 14cm;
-}
+} */
 .aboutHeading{
   color: rgb(255, 106, 0);
   font-family: headingsFont;
   font-size: 4em;
   text-align: center;
-  margin-top: 5.2em;
+  /* margin-top: -5.2em; */
   padding-top: 1em;
 }
 
@@ -284,10 +284,10 @@
   padding-top: 2em;
 }
 
-.rulebook{
+/* .rulebook{
   background-color: whitesmoke;
   height: 100cm;
-}
+} */
 .rulebookHeading{
   color: rgb(255, 106, 0);
   font-family: headingsFont;
@@ -329,7 +329,7 @@
   /* Platinum-Sponsors */
 
   #mu-sponsors{
-    margin-top: 55em;
+    /* margin-top: 55em; */
     color: rgb(247, 93, 22);
   }
 
@@ -413,11 +413,11 @@
     }
   }
   
-  .associate-sponsors img {
-    width: 25vh;
+  /* .sponsors-grid.sponsor-image{
+    width: 10vh;
     margin: auto;
-  }
-  
+  } */
+
   .associate-sponsors-grid > div {
     display: flex;
   }
@@ -437,14 +437,14 @@
     }
   }
   
-  .mno-sponsor img {
+  /* .mno-sponsor img {
     width: 20vh;
     margin: auto;
   }
   
   .mno-sponsors-grid > div {
     display: flex;
-  }
+  } */
   /* End */
   
   @media (max-width: 2000px) {
@@ -657,6 +657,13 @@
 .sponsor-image {
   transition: 0.5s;
 }
+.singleass a{
+  width:50%;
+
+}
+.singleass a img{
+  width: 100%;
+}
 .sponsor-image:hover {
   transform: scale(1.12);
 }
@@ -755,10 +762,10 @@
   justify-content: center;
   align-items: center;    
   min-height: 50vh;
-  background: white;
+  background: black;
 }
 .octeam{
-background-color: white;
+background-color: #000;
 font-family: headingsFont;
 }
 
@@ -831,7 +838,7 @@ footer {
 }
 
 #container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
