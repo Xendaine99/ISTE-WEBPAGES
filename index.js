@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/orientationRegister', (req, res) => {
-    res.sendFile(__dirname + '/static/html/Orientation.html');
+    res.sendFile(__dirname + '/static/html/orientation.html');
 });
 
 app.get('/', (req, res) => {
