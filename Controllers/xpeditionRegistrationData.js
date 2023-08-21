@@ -61,7 +61,7 @@ router.post('/createuser', [
      res.send("Registered Successfully");
   
     } catch (error) {
-      console.log("printinh",error)
+      console.log("printing",error)
       res.status(500).send("Internal Server Error");
     }
   })
