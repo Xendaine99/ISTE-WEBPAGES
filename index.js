@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const orientationRegistrationData = require('./Controllers/orientationRegistrationData');
+const xpeditionRegistrationData = require('./Controllers/xpeditionRegistrationData');
 app.use(express.json());
 
 app.use(express.static(__dirname + '/'));
@@ -22,13 +23,11 @@ app.get('/xpedition', (req, res) => {
 
 app.post('/orientationSubmit', (req, res) => {
     orientationRegistrationData.orientationData_get(req, res);
-    res.sendFile(__dirname + '/static/html/Orientation.html');
 });
 
 
 app.post('/eventRegisterSubmit', (req, res) => {
     xpeditionRegistrationData.eventRegister_get(req, res);
-    res.sendFile(__dirname + '/static/html/xpedition.html');
 });
 
 app.listen(3000, () => {

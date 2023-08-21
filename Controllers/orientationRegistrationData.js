@@ -4,6 +4,7 @@ const orientationRegistrationDb = require('../Database/orientationRegistrationDb
 const asyncHandler = require("express-async-handler");
 
 
+orientationRegistrationDb.connectToMongo();
 
 
 
@@ -13,4 +14,6 @@ exports.orientationData_get = asyncHandler(async (req, res) => {
         email: req.body.email,
         phoneNo: req.body.phoneNo,
         rollNo: req.body.rollNo,
-}) });
+})
+    res.send("Registered Successfully");
+});

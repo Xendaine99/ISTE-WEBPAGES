@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const client = "mongodb+srv://sarthaksri017:xpedition@cluster0.jn0oyw5.mongodb.net/"
+const client = "mongodb+srv://sarthaksri017:xpedition@cluster0.jn0oyw5.mongodb.net/iste"
 
 function connectToMongo() {
     mongoose.connect(client, { useNewUrlParser: true, useUnifiedTopology: true })
