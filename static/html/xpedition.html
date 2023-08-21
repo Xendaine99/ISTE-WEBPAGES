@@ -25,7 +25,7 @@
             
           </center>
       <div class="title">Team Details</div>
-      <form action="/eventRegisterSubmit" method="post">
+      <form action="/eventRegisterSubmit/createuser" method="post">
         <!-- {% csrf_token %} -->
         <div class="user__details">
         <div class="input__box">
@@ -34,7 +34,7 @@
         </div> 
         <div class="input__box">
           <span class="details">Team Password *</span>
-          <input type="text" maxlength="40" placeholder="Team's Password" required name="teamPassword" />
+          <input type="text" maxlength="40" placeholder="Team's Password" required name="password" />
       </div> 
           <div class="input__box">
             <span class="details">Leader's Name *</span>
@@ -43,7 +43,7 @@
 
           <div class="input__box">
             <span class="details">Leader's Roll No* </span>
-            <input type="tel" pattern="[0-9]{9}" placeholder="Roll No" required name="rollNo1" />
+            <input type="tel" placeholder="Roll No" required name="rollNo1" />
           </div>
 
           <div class="input__box">
@@ -68,7 +68,7 @@
 
           <div class="input__box">
             <span class="details">Teammate Roll No* </span>
-            <input type="tel" pattern="[0-9]{9}" placeholder="Roll No" required name="teammate1rollno" />
+            <input type="tel" placeholder="Roll No" required name="teammate1rollno" />
           </div>
 
           <div class="input__box">
@@ -92,7 +92,7 @@
 
           <div class="input__box">
             <span class="details">Teammate Roll No* </span>
-            <input type="tel" pattern="[0-9]{9}" placeholder="Roll No" required name="teammate2rollno" />
+            <input type="tel"  placeholder="Roll No" required name="teammate2rollno" />
           </div>
 
           <div class="input__box">
@@ -116,7 +116,7 @@
 
           <div class="input__box">
             <span class="details">Teammate Roll No </span>
-            <input type="tel" pattern="[0-9]{9}" placeholder="Roll No" name="teammate1rollno" />
+            <input type="tel" placeholder="Roll No" name="teammate1rollno" />
           </div>
 
           <div class="input__box">

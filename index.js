@@ -16,9 +16,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/static/html/index.html');
 });
 
-app.get('/eventRegister', (req, res) => {
+app.get('/xpedition', (req, res) => {
     res.sendFile(__dirname + '/static/html/xpedition.html');
-});
+})
+
 
 app.use('/eventRegisterSubmit', require('./Controllers/xpeditionRegistrationData'));
 

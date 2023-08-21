@@ -19,6 +19,9 @@ const UserSchema = new Schema({
     type : String,
     required : true
   },
+  phoneNo1:{
+    type : String,
+  },
   name2:{
     type : String,
     required : true
@@ -26,11 +29,13 @@ const UserSchema = new Schema({
   email2: {
     type: String,
     required : true,
-    unique : true
   },
   rollNo2:{
     type : String,
     required : true
+  },
+  phoneNo2:{
+    type : String,
   },
   name3:{
     type : String,
@@ -39,24 +44,25 @@ const UserSchema = new Schema({
   email3: {
     type: String,
     required : true,
-    unique : true
   },
   rollNo3:{
     type : String,
     required : true
   },
+  phoneNo3:{
+    type : String,
+  },
   name4:{
     type : String,
-    required : true
   },
   email4: {
     type: String,
-    required : true,
-    unique : true
   },
   rollNo4:{
     type : String,
-    required : true
+  },
+  phoneNo4:{
+    type : String,
   },
   password: {
     type: String,

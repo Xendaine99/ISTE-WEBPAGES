@@ -1,5 +1,6 @@
 const express = require('express');
 const User = require('../Schema/xpeditionRegistration');
+const Game = require('../Schema/Game');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 
@@ -13,8 +14,6 @@ router.post('/createuser', [
     body('email2', 'Enter a valid email').isEmail(),
     body('name3', 'Enter a valid name').isLength({ min: 3 }),
     body('email3', 'Enter a valid email').isEmail(),
-    body('name4', 'Enter a valid name').isLength({ min: 3 }),
-    body('email4', 'Enter a valid email').isEmail(),
     body('password', 'Password must be atleast 5 characters').isLength({ min: 5 }),
   ], async (req, res) => {
     // If there are errors, return Bad request and the errors
@@ -28,6 +27,8 @@ router.post('/createuser', [
       if (user) {
         return res.status(400).json({ error: "Sorry a user with this email already exists" })
       }
+
+      console.log(req.body);
   
       // Create a new user
       user = await User.create({
@@ -35,15 +36,19 @@ router.post('/createuser', [
         name1: req.body.name1,
         email1: req.body.email1,
         rollNo1: req.body.rollNo1,
+        phoneNo1: req.body.phoneNo1,
         name2: req.body.name2,
         email2: req.body.email2,
         rollNo2: req.body.rollNo2,
+        phoneNo2: req.body.phoneNo2,
         name3: req.body.name3,
         email3: req.body.email3,
         rollNo3: req.body.rollNo3,
+        phoneNo3: req.body.phoneNo3,
         name4: req.body.name4,
         email4: req.body.email4,
         rollNo4: req.body.rollNo4,
+        phoneNo4: req.body.phoneNo4,
         password: req.body.password,
       });
       await Game.create({
