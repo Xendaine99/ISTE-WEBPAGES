@@ -20,13 +20,15 @@ app.get('/xpedition', (req, res) => {
     res.sendFile(__dirname + '/static/html/xpedition.html');
 })
 
-
-app.use('/eventRegisterSubmit', require('./Controllers/xpeditionRegistrationData'));
-
-
 app.post('/orientationSubmit', (req, res) => {
     orientationRegistrationData.orientationData_get(req, res);
     res.sendFile(__dirname + '/static/html/Orientation.html');
+});
+
+
+app.post('/eventRegisterSubmit', (req, res) => {
+    xpeditionRegistrationData.eventRegister_get(req, res);
+    res.sendFile(__dirname + '/static/html/xpedition.html');
 });
 
 app.listen(3000, () => {

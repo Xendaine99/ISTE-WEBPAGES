@@ -4,7 +4,6 @@ const orientationRegistrationDb = require('../Database/orientationRegistrationDb
 const asyncHandler = require("express-async-handler");
 
 
-orientationRegistrationDb.connectToMongo();
 
 
 
