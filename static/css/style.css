@@ -46,9 +46,9 @@
     padding-right: 20px;
 }
 
-.landing{
+/* .landing{
   margin-top: 10em;
-}
+} */
 
 
 #landing a{
@@ -69,15 +69,15 @@
     margin-left: 2em;
 }
 
-.eventlogo{
-    margin-top: -22em;
-    /* margin-left: 10em; */
-}
+/* .eventlogo{
+    /* margin-top: -22em; */
+    /* margin-left: 10em; 
+} */
 
 
-#registerbtn{
+/* #registerbtn{
   margin-top: -14.7em;
-}
+} */
 
 
 #registerbtn button{
@@ -91,7 +91,7 @@
   overflow: hidden;
   transition: 0.5s;
   cursor: pointer;
-  margin-left: 32.5em;
+  /* margin:auto; */
   font-size: larger;
   border-radius: 1cm;
   font-family: buttonfont;
@@ -115,10 +115,6 @@
   font-weight: 100;
   margin-top: 4em;
   padding-top: 1em;
-  margin-top: 1cm;
-  /* margin-left: 1cm; */
-  /* background-image: url(Xpedition\ Logo\ background.png); */
-  height: 8cm;
 }
 
 #timerLanding h1 {
@@ -256,7 +252,7 @@
 } */
 
 .about{
-  margin-top: -20em;
+  /* margin-top: -20em; */
   background-color: #000;
 }
 
@@ -275,11 +271,12 @@
 }
 
 .aboutPara{
+  width: 80vw;
   color: white;
   font-family: textFont;
   font-size: x-large;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
+  /* padding-left: 2.5em; */
+  /* padding-right: 2.5em; */
   text-align: justify;
   padding-top: 2em;
 }
@@ -298,6 +295,12 @@
 
 .rulebookPara{
   padding-top: 3em;
+  width:80vw;
+}
+.rulebook-flex{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .rulebookText{
@@ -306,10 +309,11 @@
   font-size: x-large;
   padding-left: 2.5em;
   padding-right: 2.5em;
-  text-align: justify;
+  text-align: center;
   border-style: solid;
-  width: 54em;
-  margin-left: 2em;
+  width: 80vw;
+  /* margin-left: 2em; */
+  border-radius: 1rem;
   background-color: rgb(255, 106, 0);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -727,9 +731,6 @@
   flex-direction: column;
 }
 
-.sponsors-head .platinum-sponsors{
-  /* font-family: MyFont; */
-}
 
 .sponsor-title {
   font-size: 4rem;
@@ -774,7 +775,7 @@ font-family: headingsFont;
   font-size: 4em;
   background: linear-gradient(45deg, #ef1404, #ff8c00);
   font-weight: bolder;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(0, 0, 0, 0.9); */
   padding-top: 2em;
@@ -839,14 +840,16 @@ footer {
 
 #container {
   max-width: 1500px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-us {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
   margin-top: 2em;
   font-family: headingsFont;
@@ -854,7 +857,7 @@ footer {
 
 .contact-us h2{
   font-size: 5em;
-  margin-left: -10em;
+  /* margin-left: -10em; */
   /* padding-top: 20em; */
 }
 
@@ -868,8 +871,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: -25em;
-  margin-left: 50em;
+  align-items: center;
+  /* margin-top: -25em; */
+  /* margin-left: 50em; */
 }
 
 .contact-us label {
@@ -887,9 +891,9 @@ footer {
   border-radius: 5px;
 }
 
-#formbox{
+/* #formbox{
   margin-top: 19em;
-}
+} */
 
 
 .contact-us button[type="submit"] {
@@ -914,4 +918,10 @@ footer {
   margin-left: -50em;
   margin-top: 6em;
 
+}
+
+@media screen and (max-width:525px) {
+  .rulebookText{
+    font-size: 1rem;
+  }
 }
