@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const PORT = process.env.PORT || 3000;
 const app = express();
 const orientationRegistrationData = require('./Controllers/orientationRegistrationData');
 const xpeditionRegistrationData = require('./Controllers/xpeditionRegistrationData');
@@ -30,6 +31,6 @@ app.post('/eventRegisterSubmit', (req, res) => {
     xpeditionRegistrationData.eventRegister_get(req, res);
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log('Server Started');
 });

@@ -8,7 +8,7 @@ orientationRegistrationDb.connectToMongo();
 exports.eventRegister_get = asyncHandler(async (req, res) => {
   try {
 
-    console.log(req.body);
+  
     // Check whether the user with this email exists already
     let user = await User.findOne({ email: req.body.email1 });
     if (user) {
