@@ -15,5 +15,6 @@ exports.orientationData_get = asyncHandler(async (req, res) => {
         phoneNo: req.body.phoneNo,
         rollNo: req.body.rollNo,
 })
+    console.log("Registered Successfully");
     res.send("Registered Successfully");
 });
