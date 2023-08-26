@@ -25,12 +25,15 @@ exports.eventRegister_get = asyncHandler(async (req, res) => {
       name2: req.body.name2,
       email2: req.body.email2,
       rollNo2: req.body.rollNo2,
+      phoneNo2: req.body.phoneNo2,
       name3: req.body.name3,
       email3: req.body.email3,
       rollNo3: req.body.rollNo3,
+      phoneNo3: req.body.phoneNo3,
       name4: req.body.name4,
       email4: req.body.email4,
       rollNo4: req.body.rollNo4,
+      phoneNo4: req.body.phoneNo4,
       password: req.body.password,
     });
     await Game.create({
